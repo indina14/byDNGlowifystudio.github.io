@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Jasa Pembuatan Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #555;
+            color: white;
+        }
+        .form-container {
+            margin-top: 30px;
+            text-align: left;
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Jasa Pembuatan Filter</h1>
+        <p>Pilih paket sesuai kebutuhan Anda</p>
+        <table>
+            <tr>
+                <th>Paket</th>
+                <th>Harga</th>
+                <th>Detail</th>
+            </tr>
+            <tr>
+                <td>Basic Filter</td>
+                <td>Rp2.000.000 – Rp5.000.000</td>
+                <td>Filter sederhana, 1 efek utama</td>
+            </tr>
+            <tr>
+                <td>Advanced Filter</td>
+                <td>Rp6.000.000 – Rp12.000.000</td>
+                <td>Beberapa efek & interaktif</td>
+            </tr>
+            <tr>
+                <td>Custom Campaign</td>
+                <td>Rp15.000.000+</td>
+                <td>Filter eksklusif untuk campaign besar</td>
+            </tr>
+        </table>
+
+        <div class="form-container">
+            <h2>Formulir Pemesanan</h2>
+            <form id="orderForm">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="package">Pilih Paket</label>
+                <select id="package" name="package">
+                    <option value="Basic Filter">Basic Filter</option>
+                    <option value="Advanced Filter">Advanced Filter</option>
+                    <option value="Custom Campaign">Custom Campaign</option>
+                </select>
+                
+                <label for="details">Deskripsi Kebutuhan</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+                
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pesanan Anda telah dikirim! Kami akan menghubungi Anda segera.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket Harga</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9eaf6;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-        .menu {
-            margin-bottom: 20px;
-        }
-        .menu a {
-            background-color: #555;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .menu a:hover {
-            background-color: #333;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricelist - Glowify Studio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      background-color: #f9eaf6;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #e88787;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .sidebar a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #f8b9b9;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+      margin: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h1 {
+      color: #e88787;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #f4b6b6;
+      border-bottom: 3px solid #f8b9b9;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .price-box {
+      background-color: #fff0f7;
+      border: 2px solid #f7b3d0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .price-box h2 {
+      color: #d65f5f;
+      margin-bottom: 10px;
+    }
+
+    .price-box ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .price-box ul li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <a href="index.html">Kembali ke Beranda</a>
-        </div>
-        <h1>Paket Harga</h1>
-        <table border="1" width="100%" cellpadding="10">
-            <tr>
-                <th>Paket</th>
-                <th>Harga</th>
-                <th>Deskripsi</th>
-            </tr>
-            <tr>
-                <td>Basic Filter</td>
-                <td>Rp100.000 – Rp400.000</td>
-                <td>Filter sederhana, 1 efek utama</td>
-            </tr>
-            <tr>
-                <td>Advanced Filter</td>
-                <td>Rp500.000 – Rp1.000.000</td>
-                <td>Beberapa efek & interaktif</td>
-            </tr>
-            <tr>
-                <td>Custom Campaign</td>
-                <td>Rp1.000.000+</td>
-                <td>Filter eksklusif untuk campaign besar(sesuai tingkat kesulitan) </td>
-            </tr>
-        </table>
+
+  <div class="sidebar">
+    <img src="https://i.imgur.com/Rh6XUoL.png" alt="Logo Glowify Studio">
+    <a href="index.html">Beranda</a>
+    <a href="harga.html">Pricelist</a>
+    <a href="order.html">Order</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="about.us.html">About Us</a>
+  </div>
+
+  <div class="content">
+    <h1>Daftar Harga Filter AR</h1>
+
+    <div class="price-box">
+      <h2>✨ Paket Basic</h2>
+      <ul>
+        <li>1 Filter AR</li>
+        <li>Efek simple (blush, glow, dll)</li>
+        <li>Durasi pengerjaan: 2-3 hari</li>
+        <li><strong>Harga: Rp100.000</strong></li>
+      </ul>
     </div>
+
+    <div class="price-box">
+      <h2>🌟 Paket Advanced</h2>
+      <ul>
+        <li>1 Filter AR</li>
+        <li>Efek + animasi + interaksi</li>
+        <li>Durasi pengerjaan: 3-5 hari</li>
+        <li><strong>Harga: Rp250.000</strong></li>
+      </ul>
+    </div>
+
+    <div class="price-box">
+      <h2>🚀 Custom Campaign</h2>
+      <ul>
+        <li>Filter khusus brand/momen</li>
+        <li>Desain & konsep unik</li>
+        <li>Durasi sesuai kompleksitas</li>
+        <li><strong>Harga: Mulai Rp400.000</strong></li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>

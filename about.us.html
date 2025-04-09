@@ -1,61 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-            font-family:'Times New Roman';
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-        .menu {
-            margin-bottom: 20px;
-        }
-        .menu a {
-            background-color: #555;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .menu a:hover {
-            background-color: #333;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - Glowify Studio</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9eaf6;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #e88787;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .sidebar a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #f8b9b9;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+      margin: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h1 {
+      color: #e88787;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #f4b6b6;
+      border-bottom: 3px solid #f8b9b9;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      color: #e88787;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      text-align: left;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    ul li {
+      padding: 8px 0;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <a href="about.us.html">Kembali ke Beranda</a>
-        </div>
-        <h1>Tentang Kami</h1>
-        <p>Kami adalah tim kreatif yang menyediakan jasa pembuatan filter AR untuk berbagai kebutuhan. Dengan pengalaman bertahun-tahun, kami telah membantu banyak brand dan individu menciptakan filter unik dan menarik.</p>
-        
-        <h2>Kenapa Memilih Kami?</h2>
-        <ul style="text-align: left; display: inline-block;">
-            <li>🎨 Desain unik dan kreatif</li>
-            <li>⚡ Proses pengerjaan cepat</li>
-            <li>📱 Kompatibel dengan berbagai platform</li>
-            <li>✅ Harga fleksibel sesuai kebutuhan</li>
-        </ul>
+  <div class="sidebar">
+    <!-- Ganti src berikut dengan logo kamu -->
+    <img src="https://i.imgur.com/Rh6XUoL.png" alt="Logo Glowify Studio">
+    <a href="index.html">Beranda</a>
+    <a href="harga.html">Pricelist</a>
+    <a href="order.html">Order</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="about.us.html">About Us</a>
+  </div>
 
-        <h2>Hubungi Kami</h2>
-        <p>Email: support@glowifystudio.com</p>
-        <p>Instagram: @glowifystudio_</p>
-    </div>
+  <div class="content">
+    <h1>Tentang Kami</h1>
+    <p>
+      Kami adalah tim kreatif yang menyediakan jasa pembuatan filter AR untuk berbagai kebutuhan. Dengan pengalaman bertahun-tahun, kami telah membantu banyak brand dan individu menciptakan filter unik dan menarik.
+    </p>
+
+    <h2>Kenapa Memilih Kami?</h2>
+    <ul>
+      <li>🎨 Desain unik dan kreatif</li>
+      <li>⚡ Proses pengerjaan cepat</li>
+      <li>📱 Kompatibel dengan berbagai platform</li>
+      <li>✅ Harga fleksibel sesuai kebutuhan</li>
+    </ul>
+
+    <h2>Hubungi Kami</h2>
+    <p>Email: support@glowifystudio.com</p>
+    <p>WA:<a href="https://wa.me/6287720219506" target="'_blank">+6287720219506 </a><p></p>
+    <p>Instagram: <a href="https://instagram.com/glowifystudio_" target="_blank">@glowifystudio_</a></p>
+  </div>
 </body>
 </html>
